@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>BIBLIOTECA ONLINE</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      text-align: center;
+    }
+
+    #search {
+      margin: 20px auto;
+      padding: 8px;
+      width: 300px;
+      font-size: 16px;
+    }
+    #book-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    #book-table th, #book-table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    #book-table th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    #pagination button {
+      margin: 2px;
+      padding: 5px 10px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    #pagination .active-page {
+      background-color: #007BFF;
+      color: white;
+      font-weight: bold;
+    }
+    .logo {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header class="aurunci-banner">
+    <div class="banner-content">
+      <img src="img/logoparco.png" alt="Logo Parco" class="banner-logo">
+      <span class="banner-text">Parco Naturale dei Monti Aurunci</span>
+    </div>
+  </header>
+  <h1> BIBLIOTECA ONLINE </h1>
+  <h2> del Centro studi e di documentazione sulla storia e la cultura aurunca Angelo De Santis </h2>
+  <input type="text" id="search" placeholder="Cerca per titolo, autore, editore o tema..." />
+  <table id="book-table">
+    <thead>
+      <tr>
+        <th>Titolo</th>
+        <th>Autore</th>
+        <th>Editore</th>
+        <th>Luogo e Anno</th>
+        <th>ISBN</th>
+        <th>Tema</th>
+      </tr>
+    </thead>
+    <tbody id="book-list">
+      <!-- I libri verranno inseriti qui -->
+    </tbody>
+  </table>
+  <div id="pagination"></div>
+  <script src="books.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
